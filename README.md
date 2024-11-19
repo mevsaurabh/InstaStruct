@@ -34,6 +34,10 @@ These instructions will help you set up the project locally for development and 
 1. Clone the repository:
    ```bash
    git clone https://github.com/mevsaurabh/InstaStruct.git
+2.  Navigate to the project directory:
+```bash
+cd InstaStruct
+```
 
 ## Usage
 Provide examples of how to use your project. Include code snippets if applicable.
