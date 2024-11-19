@@ -1,5 +1,6 @@
 # InstaStruct
-
+## Project Overview
+InstaStruct is a social media platform that implements core features similar to Instagram, built with a focus on efficient data structures and algorithms. The application provides a robust foundation for social media interactions while maintaining optimal performance.
 ## Table of Contents
 
 - [Features](#features)
@@ -20,7 +21,6 @@
 
 ## Getting Started
 
-These instructions will help you set up the project locally for development and testing purposes.
 
 ### Prerequisites
 
@@ -49,3 +49,80 @@ instagram = Instagram()
 # Create a user profile
 instagram.create_profile(1, "Ansh", "Photography enthusiast 📸")
 ```
+
+# Data Structures
+
+## Post Management
+```
+post_map = defaultdict(list)  # userId -> [count, postId, caption, likes, comments]
+```
+- Optimized for O(1) post retrieval
+- Maintains chronological order
+
+
+## Social Graph
+```
+follow_map = defaultdict(set)  # userId -> set of followeeId
+```
+- Efficient follower relationship management
+- O(1) follow/unfollow operations
+
+
+## Engagement Tracking
+```
+like_map = defaultdict(set)    # postId -> set of userIds
+comment_map = defaultdict(list) # postId -> [userId, comment, timestamp]
+```
+- Fast like/unlike operations
+- Chronological comment ordering
+
+# Performance Characteristics
+## Time Complexity
+
+- Post Creation: O(1)
+- Feed Generation: O(k log f) where:
+
+- k = posts retrieved
+- f = followed users
+
+
+- Like/Unlike: O(1)
+- Follow/Unfollow: O(1)
+
+## Space Complexity
+O(U + P + S + L + C) where:
+
+- U = Users
+- P = Posts
+- S = Stories
+- L = Likes
+- C = Comments
+
+# Key Benefits
+
+## Scalability
+
+- Efficient data structures for large user bases
+- Optimized feed generation algorithm
+- Memory-efficient storage
+
+
+## Performance
+
+- Fast content retrieval
+- Efficient social interactions
+- Quick feed updates
+
+
+## Maintainability
+
+- Clear code structure
+- Well-documented functions
+- Modular design
+
+
+## Extensibility
+
+- Easy to add new features
+- Flexible data structures
+- Robust foundation
