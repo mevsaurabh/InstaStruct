@@ -1,6 +1,6 @@
 # InstaStruct
 ## Project Overview
-InstaStruct is a social media platform that implements core features similar to Instagram, built with a focus on efficient data structures and algorithms. The application provides a robust foundation for social media interactions while maintaining optimal performance.
+InstaStruct implements core features similar to Instagram, built with a focus on efficient data structures and algorithms. The application provides a robust foundation for social media interactions while maintaining optimal performance.
 ## Table of Contents
 
 - [Features](#features)
