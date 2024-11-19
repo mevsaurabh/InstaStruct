@@ -38,7 +38,6 @@ cd InstaStruct
 ```
 
 ## Usage
-Provide examples of how to use your project. Include code snippets if applicable.
 ```bash
 from instagram import Instagram
 
