@@ -1,7 +1,5 @@
 # InstaStruct
 
-A brief description of what your project does and its purpose.
-
 ## Table of Contents
 
 - [Features](#features)
